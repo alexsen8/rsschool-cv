@@ -1,1 +1,193 @@
-1 
+@font-face {
+    font-family: Roboto;
+    src: url(assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(assets/fonts/Roboto-Thin.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    border-right: 1px solid;
+    border-bottom: 10px;
+    margin: 5px;
+    padding: 5px 20px;
+    background-color: beige;
+    width: unset;
+    display: block;
+    position: relative;
+}
+
+.main {
+    display: block;
+    margin-bottom: auto;
+    background-color: beige;
+}
+
+.footer {
+    display: block;
+    background-color: beige;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: saddlebrown;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 50px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav {
+    display: block;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-item {
+    font-size: 22px;
+    text-decoration: none;
+    font-variant: small-caps;
+}
+
+.nav-link {
+    position: relative;
+    padding: 0px 20px;
+    margin-block-end: 5px;
+    line-height: 30px;
+    transition: 3s;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid;
+}
+
+.photo {
+    width: 150px;
+    height: 200px;
+    display: flex;
+    border-style: hidden;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border: 2px beige;
+    flex-direction: column-reverse;
+}
+
+.name {
+    font-size: 30px;
+    font-weight: 200;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 20px;
+}
+
+.name-work {
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 1px;
+    text-align: center;
+}
+
+.contacts {
+    display: flex;
+    width: 70%;
+    height: 2px;
+    border: 2px beige;
+    float: right;
+    list-style: none;
+    padding: 10px;
+    height: auto;
+}
+
+.contacts-list {
+    list-style: none;
+}
+
+.section {
+    border-bottom: 2px solid;
+    border-right: 1px solid;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgba(255, 248, 220, 0.925);
+}
+
+.section-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    align-content: center;
+    color: teal;
+    float: inline-start;
+    text-align: center;
+}
+
+.section-description {
+
+    position: -ms-page;
+    margin: 0px;
+    padding: 0px 10px;
+    background-color: cornsilk;
+    list-style: circle;
+    align-content: space-between;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.footer-container {
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.rss-logo {
+    width: 120px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+@media (max-width:768px) {
+    .section {
+        width: 100%;
+    }
+}
